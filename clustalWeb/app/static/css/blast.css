@@ -1,0 +1,124 @@
+.fruitBg{
+    background: url(../image/clustal/orangeBg2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding: auto;
+}
+.containerBox{
+    background-color: #fff !important;
+    display: inline-block;
+    margin-top: 80px;
+}
+.titleBox{
+    background-color: rgba(219, 94, 36, 0.972);
+    font-size: 24px;
+    font-family: mysh;
+    display: block;
+    margin-top: -17px;
+    color: #fff;
+}
+.loginAlert{
+    font-size: 39px;
+    font-family: mysh;
+    color: rgb(180, 148, 42);
+    margin-top: 34px;
+    margin-left: 17px;
+}
+.loginInputBox1{
+    display: block !important;
+    margin-top: 16px !important;
+    margin-left: 10px !important;
+}
+.loginInputBox2{
+    display: block !important;
+    margin-top: 14px !important;
+    margin-left: 10px !important;
+    margin-bottom: 0px !important;
+}
+.loginInputBox3{
+    display: block !important;
+    margin-top: 14px !important;
+    margin-left: 10px !important;
+    margin-bottom: 20px !important;
+}
+.submitButton{
+    display: block !important;
+    margin-left: 450px !important;
+    margin-top: 50px;
+    margin-right: 100px !important;
+    margin-bottom: 9px;
+    padding-left: 95px !important;
+    padding-right: 100px !important;
+}
+.textAskAccount{
+    font-size: 17px;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 19px;
+}
+.textRegisterAccount{
+    font-size: 18px;
+}
+.inputBox1{
+    border-top-right-radius: 13px !important; 
+border-top-left-radius: 13px !important; 
+border-bottom-right-radius:13px !important;
+border-bottom-left-radius:13px !important;
+width: 200px;
+}
+.inputBox2{
+    border-top-right-radius: 13px !important; 
+border-top-left-radius: 13px !important; 
+border-bottom-right-radius:13px !important;
+border-bottom-left-radius:13px !important;
+width: 300px;
+height: 170px;
+}
+.spaceUseLogin{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 168px;
+}
+.spaceUseRegister{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 54px;
+}
+.title{
+font-size: 50px;
+padding-top: 70px;
+padding-left: 55px;
+}
+.textKuang{
+    padding: 110px;
+}
+.fileBtn{
+    display: block !important;
+    margin-left: 450px !important;
+    margin-top: 10px;
+    margin-right: 100px !important;
+    margin-bottom: 20px;
+    padding-right: 100px !important;
+    width: 190px;
+
+}
+.uploadWord{
+    font-size: 27px;
+    width: 400px;
+    margin-left: 390px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.nav_bar{
+    background-color: rgba(0,0,0,0.92) !important;
+    border-color:rgba(0,0,0,0.92) !important ;
+    color: #cdcdcd !important;
+}
+.nav1:hover{
+    color: 	#fff !important;
+}
+
+.downloadLink2{
+  font-size: 21px;
+  margin-left: 310px;
+}

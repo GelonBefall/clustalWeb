@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>比对结果</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/css/blast.css">
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid fruitBg blur">
+    
+
+     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-light nav_bar">
+      <div class="container-fluid">
+        <a class="navbar-brand nav_bar nav1" href={{url_for('main.index')}}>返回上一层</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+         
+        </div>
+      </div>
+    </nav> 
+    <div class="row spaceUseLogin">
+    <div  class=" col-sm-6 col-md-6 col-bg-6 offset-md-2 offset-md-2 containerBox shadow p-3 mb-5 bg-white rounded containerBox">
+
+      <div class="row ">
+        <div class="col-sm-12 col-md-12 col-bg-12 titleBox">比对结果</div>
+      </div>
+      </br>
+        <div class="row ">
+          <div>
+             {{ output }}</br>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="downloadLink2">&nbsp&nbsp&nbsp&nbsp&nbsp点击下载aln文件：<a href={{url_for('main.alnDownload', alnName=alnName)}}>{{ alnName }}</a></div>
+      </div>
+
+    
+    </div>
+
+    
+  </div>
+
+
+
+  <div class="jumbotron text-center" style="margin-bottom:0 ;background-color:#252525d5 ;color: #ffffff">
+    </br>
+    <p>请使用Chrome，火狐或Opera浏览器，或IE10及以上的浏览器。有任何问题请联系QQ1321591813</p>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+1、需要在多处重复使用的模板代码可以写入单独文件，包含在所有面板以避免重复：
+{% include 'common.html' %}
+
+2、基模板很多块是flask-bootstrap自用，直接重定义会导致问题。如bootstrap所需文件在style和script块中声明。
+如果程序需要向已有内容的块中添加新内容，必须使用super()函数。#！！！！！
+例如添加新的JavaScript（已经有JavaScript块了）：
+{% block scripts %}
+{{ super() }}
+<script type="text/javscript" src="my-script.js"></script>
+{% endblock %}
+
+3、定义收藏夹图标
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename = 'favicon.ico') }}"
+type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}"
+type="image/x-icon">
+{% endblock %}
